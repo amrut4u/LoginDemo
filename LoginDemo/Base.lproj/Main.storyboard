@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ed-3I-djv">
-                                <rect key="frame" x="20" y="288" width="374" height="60"/>
+                                <rect key="frame" x="20" y="244" width="374" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="bO6-OY-390"/>
                                 </constraints>
@@ -25,7 +25,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Mobile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPi-q0-u6a">
-                                <rect key="frame" x="10" y="368" width="394" height="30"/>
+                                <rect key="frame" x="10" y="324" width="394" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="jF0-Th-FIs"/>
                                 </constraints>
@@ -34,23 +34,23 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uhg-HZ-3C1">
-                                <rect key="frame" x="20" y="593" width="374" height="35"/>
+                                <rect key="frame" x="20" y="496.5" width="374" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="jpc-79-Gsi"/>
+                                    <constraint firstAttribute="height" constant="50" id="jpc-79-Gsi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="alJ-6m-fOi">
-                                <rect key="frame" x="20" y="648" width="374" height="35"/>
+                                <rect key="frame" x="20" y="566.5" width="374" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="F8n-zz-NtB"/>
+                                    <constraint firstAttribute="height" constant="50" id="F8n-zz-NtB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8TL-zA-247">
-                                <rect key="frame" x="20" y="723" width="374" height="50"/>
+                                <rect key="frame" x="20" y="656.5" width="374" height="50"/>
                                 <color key="backgroundColor" red="0.23529411764705882" green="0.77254901960784317" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="uGq-Lx-nCK"/>
@@ -74,7 +74,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7ed-3I-djv" secondAttribute="trailing" constant="20" id="AO0-ee-PNu"/>
                             <constraint firstItem="7ed-3I-djv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="E8U-dc-DgJ"/>
                             <constraint firstItem="uhg-HZ-3C1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="INn-nr-rS7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8TL-zA-247" secondAttribute="bottom" constant="40" id="Kzq-pR-6WM"/>
                             <constraint firstItem="OPi-q0-u6a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="MtZ-kw-RY7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OPi-q0-u6a" secondAttribute="trailing" constant="10" id="Ov0-0Y-jow"/>
                             <constraint firstItem="O0n-rA-kuR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="S2R-T0-Wpt"/>
@@ -84,6 +83,7 @@
                             <constraint firstItem="OPi-q0-u6a" firstAttribute="top" secondItem="7ed-3I-djv" secondAttribute="bottom" constant="20" id="ZOE-dz-m5B"/>
                             <constraint firstItem="8TL-zA-247" firstAttribute="top" secondItem="alJ-6m-fOi" secondAttribute="bottom" constant="40" id="hqc-hH-Wd4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="alJ-6m-fOi" secondAttribute="trailing" constant="20" id="jf7-7w-C2e"/>
+                            <constraint firstItem="uhg-HZ-3C1" firstAttribute="top" secondItem="O0n-rA-kuR" secondAttribute="bottom" constant="30" id="kd4-aP-O8y"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8TL-zA-247" secondAttribute="trailing" constant="20" id="lm6-2R-y4K"/>
                             <constraint firstItem="alJ-6m-fOi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lyE-09-LBH"/>
                             <constraint firstItem="OPi-q0-u6a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oBB-dZ-bjW"/>
@@ -93,9 +93,10 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="iCd-1G-Y7g"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="activityIndicator" destination="O0n-rA-kuR" id="oYW-n0-gY5"/>
+                        <outlet property="btnLogin" destination="8TL-zA-247" id="siB-oB-fW0"/>
                         <outlet property="txtFieldId" destination="uhg-HZ-3C1" id="5Ze-2a-hr7"/>
                         <outlet property="txtFieldPassword" destination="alJ-6m-fOi" id="otT-ep-HkN"/>
                     </connections>
@@ -161,10 +162,10 @@
         <!--Navigation Controller-->
         <scene sceneID="frO-r0-OIs">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gGo-yr-Ong" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="gGo-yr-Ong" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vdR-3t-IPX">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

@@ -13,7 +13,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var txtFieldId:UITextField!
     @IBOutlet weak var txtFieldPassword: UITextField!
-    
+    @IBOutlet weak var btnLogin:UIButton!
     var token:String? {
         set{
             UserDefaults.standard.set(newValue, forKey: "Token")
@@ -28,9 +28,10 @@ class LoginViewController: UIViewController {
             self.navigateToDashboard()
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.setupButtonUI()
         // Do any additional setup after loading the view.
     }
     
@@ -39,7 +40,14 @@ class LoginViewController: UIViewController {
         self.validateLogin(email: txtFieldId.text ?? "", password: txtFieldPassword.text ?? "")
     }
     
-    
+    func setupButtonUI(){
+        btnLogin.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        btnLogin.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        btnLogin.layer.shadowOpacity = 1.0
+        btnLogin.layer.shadowRadius = 0.0
+        btnLogin.layer.masksToBounds = false
+        btnLogin.layer.cornerRadius = 4.0
+    }
     func navigateToDashboard(){
         let controller = self.storyboard?.instantiateViewController(withIdentifier: "DashboardViewController") as! DashboardViewController
         self.navigationController?.pushViewController(controller, animated: true)
@@ -51,7 +59,7 @@ class LoginViewController: UIViewController {
         self.activityIndicator.startAnimating()
         let url = URL(string: "https://reqres.in/api/login")!
         var request = URLRequest(url: url)
-        request.setValue("access-control-allow-origin", forHTTPHeaderField: "Content-Type")
+        request.setValue("X-Requested-With", forHTTPHeaderField: "Content-Type")
         request.httpMethod = "POST"
         let parameters: [String: Any] = [
             "email": email,
